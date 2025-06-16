@@ -2,7 +2,7 @@
 
 </script>
 <header class="flex flex-col relativez-20">
-    <div class="max-w-[1400] max-auto w-full flex items-center justify-between p-4 py-6">
+    <div class="max-w-[1400px] max-auto w-full flex items-center justify-between p-4 py-6">
         <a href="/" class="text-semibold"><h1>Swoley <span class="text-indigo-400">moley</span></h1></a>
     <button class="md:hidden grid place-items-center" aria-label="menu"><i class="fa-solid fa-bars"></i></button>
     <nav class="hidden md:flex items-center gap-4 lg:gap-6">
