@@ -1,7 +1,7 @@
 <script>
-	let { children } = $props();
+    let { children, id } = $props();
 </script>
-<section class={"min-h-screen flex flex-col px-4" }>
+<section {id} class={"min-h-screen flex flex-col px-4" }>
     <div class="flex flex-col flex-1 max-w-[400] mx-auto w-full">
         {@render children?.()}
     </div>
