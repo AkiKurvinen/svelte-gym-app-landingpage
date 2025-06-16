@@ -58,3 +58,7 @@ button:focus-visible {
 .specialBtn:hover {
     border-color: blue;
 }
+
+.dropShadow {
+    filter: drop-shadow(-10.89px 14.5px 35.1px rgba(29, 140, 242, 0.2))
+}
