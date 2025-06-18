@@ -18,8 +18,7 @@
         window.location.href = href;
     }
 
-</script>Vite serving allow list.
-
+</script>
 
 <!-- Desktop navigation -->
 <nav class="hidden md:flex items-center gap-4 lg:gap-6">
@@ -47,6 +46,7 @@
 
 <!-- Mobile modal -->
 {#if $openModal}
+
 <Button onclick={() => openModal.set(false)} aria-label="menu">
     <i class="fa-solid fa-xmark text-2xl"></i>
 </Button>
@@ -54,14 +54,13 @@
     <nav
         class="fixed top-0 left-0 w-screen h-screen z-50 mt-[80px] flex flex-col gap-8 md:hidden"
     >
-     
         <ul class="flex flex-col gap-4 flex-1 bg-white p-4">
             {#each navItems as item}
                 <li>
                     <Button  color="ghost" class="w-full text-left group duration-200 p-2"
                     onclick={() => reroute(item.href)}>
                         <span class="duration-200 group-hover:pl-2 poppins text-3xl font-semibold">
-                            {item.label} <i class="fa-solid fa-chevron-right text-xl pl-4" />
+                            {item.label} <i class="fa-solid fa-chevron-right text-xl pl-4"></i>
                         </span>
                     </Button>
                 </li>

@@ -5,5 +5,5 @@
 </script>
 <div class="flex items-center gap-4">
     <Button>Contact Us</Button>
-    <Button outline color={dark ? 'light' : 'dark'}>Get Started &rarr;</Button>
+    <Button outline color={dark ? 'white' : 'dark'}>Get Started &rarr;</Button>
 </div>

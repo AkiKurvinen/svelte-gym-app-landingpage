@@ -1,4 +1,3 @@
-const flowbitePlugin = require('flowbite/plugin');
 module.exports = {
     content: [
       "./src/**/*.{html,js,svelte,ts}",
@@ -9,5 +8,6 @@ module.exports = {
       extend: {},
     },
     plugins: [
-      require('flowbite/plugin')    ],
+      require('flowbite/plugin')
+    ],
   }
