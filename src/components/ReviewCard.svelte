@@ -19,10 +19,10 @@ class={"flex flex-col gap-2 w-full max-w-[500px] mx-auto relative " +
     >
         <div
             class="rounded-full bg-slate-950 aspect-square h-2"
-        />
+        ></div>
     </div>
     <div class="flex items-center gap-2">
-        <i class="fa-solid fa-user" />
+        <i class="fa-solid fa-user"></i>
         <h3 class="text-lg sm:text-xl md:text-2xl">
             {reviewItem.name}
         </h3>
