@@ -1,4 +1,5 @@
 <script>
+    import { Button } from 'flowbite-svelte';
     let { children, index, productFeature } = $props();
 </script>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-14 md:gap-14 lg:gap-20 relative text-base">
@@ -23,9 +24,7 @@
     {/each}
     </div>
     <div class="flex items-center">
-        <button class="specialBtnDark mr-auto font-semibold">
-            <p>Try free today &rarr;</p>
-        </button>
+        <Button color="primary" class="mr-auto font-semibold">Try free today &rarr;</Button>
     </div>
     
     </div>

@@ -2,6 +2,7 @@
     import SectionWrapper from "./SectionWrapper.svelte";
     import ReviewCard from "./ReviewCard.svelte";
     import Stars from "./Stars.svelte";
+    import { Button } from 'flowbite-svelte';
     let lim = true
     let reviewsList = [
         {
@@ -96,9 +97,9 @@
                 {/each}
             </div>
         </div>
-        <button on:click={() => (lim = !lim)} class="specialBtn">
-            <p>{lim ? "Show More" : "Show Less"}</p>
-        </button>
+        <Button color="primary" on:click={() => (lim = !lim)}>
+            {lim ? "Show More" : "Show Less"}
+        </Button>
         <div class="flex flex-col gap-10">
             <p class="mx-auto text-lg sm:text-xl md:text-2xl font-semibold">
                 Trusted by 1,349 Swoldiers
