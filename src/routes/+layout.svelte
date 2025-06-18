@@ -12,12 +12,12 @@
 
     function reroute(href) {
         console.log("Rerouting to:", href);
-        $openModal = false;
+        openModal.set(false);
         window.location.href = href;
     }
 </script>
 
-{#if $openModal}
+{#if !$openModal}
     <div
         class="fixed top-0 left-0 w-screen h-screen border-b bg-white z-50 flex flex-col gap-8 p-5 px-8 md:hidden"
     >
@@ -26,7 +26,7 @@
                 Swoley <span class="text-indigo-400">Moley</span>
             </h1>
             <button
-                onclick={() => $openModal = false}
+                onclick={() => openModal.set(false)}
                 class="outline-none border-none"
                 aria-label="menu"
             >
