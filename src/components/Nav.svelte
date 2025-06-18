@@ -1,4 +1,7 @@
 <script>
+    import { Button } from 'flowbite-svelte';
+
+
     import { openModal } from "../store";
     import Logo from "./Logo.svelte";
     import CTAs from "./CTAs.svelte";
@@ -14,8 +17,8 @@
         openModal.set(false);
         window.location.href = href;
     }
-</script>
 
+</script>
 
 <!-- Desktop navigation -->
 <nav class="hidden md:flex items-center gap-4 lg:gap-6">
@@ -29,52 +32,37 @@
             </li>
         {/each}
         <li>
-            <button class="specialBtn">
-                <p>Start free today</p>
-            </button>
+            <Button>Start free today</Button>
         </li>
     </ul>
 </nav>
 
 <!-- Mobile menu button -->
 {#if !$openModal}
-<button
-    onclick={() => ($openModal = true)}
-    aria-label="menu"
-    class="md:hidden grid place-items-center"
->
+<Button onclick={() => ($openModal = true)} aria-label="menu" class="md:hidden grid place-items-center ml-auto">
     <i class="fa-solid fa-bars text-2xl"></i>
-</button>
+</Button>
 {/if}
 
 <!-- Mobile modal -->
 {#if $openModal}
 
-    <button
-        onclick={() => openModal.set(false)}
-        class="outline-none border-none"
-        aria-label="menu"
-    >
-        <i class="fa-solid fa-xmark text-2xl"></i>
-    </button>
+<Button onclick={() => openModal.set(false)} aria-label="menu">
+    <i class="fa-solid fa-xmark text-2xl"></i>
+</Button>
      
     <nav
         class="fixed top-0 left-0 w-screen h-screen z-50 mt-[80px] flex flex-col gap-8 md:hidden"
     >
-     
         <ul class="flex flex-col gap-4 flex-1 bg-white p-4">
             {#each navItems as item}
                 <li>
-                    <button
-                        onclick={() => reroute(item.href)}
-                        class="border-none outline-none p-2 group duration-200 cursor-pointer text-left w-full"
-                    >
-                        <p
-                            class="duration-200 group-hover:pl-2 poppins text-3xl font-semibold"
-                        >
-                            {item.label} <i class="fa-solid fa-chevron-right text-xl pl-4" />
-                        </p>
-                    </button>
+                    <Button  color="ghost" class="w-full text-left group duration-200 p-2"
+                    onclick={() => reroute(item.href)}>
+                        <span class="duration-200 group-hover:pl-2 poppins text-3xl font-semibold">
+                            {item.label} <i class="fa-solid fa-chevron-right text-xl pl-4"></i>
+                        </span>
+                    </Button>
                 </li>
             {/each}
             <li class="flex flex-col items-center justify-center">

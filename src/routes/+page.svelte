@@ -7,7 +7,7 @@
     import Footer from '../components/Footer.svelte';
 </script>
 <main class="flex flex-col">
-    <Hero/>
+
     <Product/>
     <Reviews/>
     <FAQs/>
