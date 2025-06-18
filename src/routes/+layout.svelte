@@ -17,14 +17,14 @@
     }
 </script>
 
-{#if !$openModal}
+{#if $openModal}
     <div
-        class="fixed top-0 left-0 w-screen h-screen border-b bg-white z-50 flex flex-col gap-8 p-5 px-8 md:hidden"
+        class="fixed top-0 left-0 w-screen h-screen border-b bg-white p-5 px-4 pt-0 z-50 flex flex-col gap-8 md:hidden"
     >
-        <div class="flex items-center justify-between gap-4 border-b pb-2">
-            <h1 class="font-semibold">
+        <div class="flex items-center justify-between gap-4 border-b p-4 py-6">
+            <p class="font-semibold">
                 Swoley <span class="text-indigo-400">Moley</span>
-            </h1>
+            </p>
             <button
                 onclick={() => openModal.set(false)}
                 class="outline-none border-none"
