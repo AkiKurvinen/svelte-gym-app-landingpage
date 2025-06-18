@@ -1,42 +1,15 @@
 <script>
     import { openModal } from "../store";
+    import Nav from "./Nav.svelte";
+    import Logo from "./Logo.svelte";
+    export let fixed = false;
 </script>
 
-<header class="flex flex-col relative z-20">
-    <div
-        class="max-w-[1400px] mx-auto w-full flex items-center justify-between p-4 py-6"
-    >
+<header class={`flex justify-between border-b border-solid border-black items-center relative px-2 z-20 h-20 ${fixed ? 'fixed top-0 left-0 w-full' : ''}`}>
+
         <a href="/">
-            <p class="font-semibold">
-                Swoley <span class="text-indigo-400">Moley</span>
-        </p>
+            <Logo/>
         </a>
-        <button
-            onclick={() => ($openModal = true)}
-            aria-label="menu"
-            class="md:hidden grid place-items-center"
-        >
-            <i class="fa-solid fa-bars text-2xl"></i>
-        </button>
-        <nav class="hidden md:flex items-center gap-4 lg:gap-6">
-            <a
-                href="#product"
-                class="duration-200 hover:text-indigo-400 cursor-pointer"
-                >Product</a
-            >
-            <a
-                href="#reviews"
-                class="duration-200 hover:text-indigo-400 cursor-pointer"
-                >Reviews</a
-            >
-            <a
-                href="#faqs"
-                class="duration-200 hover:text-indigo-400 cursor-pointer"
-                >FAQs</a
-            >
-            <button class="specialBtn">
-                <p>Start free today</p>
-            </button>
-        </nav>
-    </div>
+        <Nav/>
+
 </header>

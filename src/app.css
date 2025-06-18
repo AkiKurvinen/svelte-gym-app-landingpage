@@ -49,6 +49,7 @@ button:focus-visible {
 
 
 .specialBtn {
+    background-color: unset;
     border-color: #646cff;
 }
 
