@@ -1,5 +1,5 @@
 <script>
-    import SectionWrapper from "../SectionWrapper.svelte";
+    import SectionWrapper from "../SectionWrapper/SectionWrapper.svelte";
     let { children, faqs } = $props();
 </script>
 <SectionWrapper id="faqs">

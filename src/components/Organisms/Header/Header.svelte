@@ -1,6 +1,6 @@
 <script>
-    import NavController from "./NavController.svelte";
-    import Logo from "../Atoms/Logo.svelte";
+    import NavController from "../Nav/NavController.svelte";
+    import Logo from "../../Atoms/Logo/Logo.svelte";
     export let fixed = false;
 </script>
 

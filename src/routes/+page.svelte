@@ -1,10 +1,9 @@
 <script>
-    import Hero from '../components/Organisms/Hero.svelte';
-    import ProductController from '../components/Organisms/ProductController.svelte';
-    import FAQsConstroller from '../components/Organisms/FAQsConstroller.svelte';
-    import Conversion from '../components/Molecules/Conversion.svelte';
-    import Footer from '../components/Organisms/Footer.svelte';
-    import ReviewsController from '../components/Organisms/ReviewsController.svelte';
+    import Hero from '../components/Organisms/Hero/Hero.svelte';
+    import ProductController from '../components/Organisms/Product/ProductController.svelte';
+    import FAQsConstroller from '../components/Organisms/FAQs/FAQsController.svelte';
+    import Conversion from '../components/Molecules/Conversion/Conversion.svelte';
+    import ReviewsController from '../components/Organisms/Reviews/ReviewsController.svelte';
 </script>
 <main class="flex flex-col">
     <ProductController/>

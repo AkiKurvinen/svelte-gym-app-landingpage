@@ -1,6 +1,6 @@
 <script>
     import Nav from "./Nav.svelte";
-    import { openModal } from "../../store";
+    import { openModal } from "../../../store";
     import { onMount } from 'svelte';
 
     const navItems = [

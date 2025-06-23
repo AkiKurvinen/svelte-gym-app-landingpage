@@ -1,6 +1,7 @@
 <script module>
   import { defineMeta } from '@storybook/addon-svelte-csf';
   import ReviewCard from './ReviewCard.svelte';
+  import { fn } from 'storybook/test';
   let mockReviewItem = 
       {
           name: "John Doe",

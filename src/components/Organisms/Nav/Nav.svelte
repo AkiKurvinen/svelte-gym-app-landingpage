@@ -1,7 +1,7 @@
 <script>
   import { Button } from 'flowbite-svelte';
-  import Logo from "../Atoms/Logo.svelte";
-  import CTAs from "../Molecules/CTAs.svelte";
+  import Logo from "../../Atoms/Logo/Logo.svelte";
+  import CTAs from "../../Molecules/CTAs/CTAs.svelte";
   let { children, navItems, openModal, onMenuOpen,onMenuClose,onNavClick } = $props();
 </script>
 

@@ -1,8 +1,8 @@
 <script>
     import "../app.css";
     let { children } = $props();
-    import FooterController from "../components/Organisms/FooterController.svelte";
-    import Header from "../components/Organisms/Header.svelte";    
+    import FooterController from "../components/Organisms/Footer/FooterController.svelte";
+    import Header from "../components/Organisms/Header/Header.svelte";    
     let y = $state(0);
     let outerHeight = $state(0);
 

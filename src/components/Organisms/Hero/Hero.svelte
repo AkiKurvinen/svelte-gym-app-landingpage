@@ -1,7 +1,7 @@
 <script>
-    import SectionWrapper from "../SectionWrapper.svelte";
-    import Header from "./Header.svelte";
-    import CTAs from "../Molecules/CTAs.svelte";
+    import SectionWrapper from "../SectionWrapper/SectionWrapper.svelte";
+    import Header from "../Header/Header.svelte";
+    import CTAs from "../../Molecules/CTAs/CTAs.svelte";
 </script>
 <SectionWrapper>
     <div class="flex flex-col gap-10 flex-1 items-center justify-center pb-10 md:pb-14">

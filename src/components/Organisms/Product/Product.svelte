@@ -1,6 +1,6 @@
 <script>
-    import ProductCard from "../Molecules/ProductCard.svelte";
-    import SectionWrapper from "../SectionWrapper.svelte";
+    import ProductCard from "../../Molecules/ProductCard/ProductCard.svelte";
+    import SectionWrapper from "../SectionWrapper/SectionWrapper.svelte";
     let { children, productFeatures } = $props();
 </script>
 <SectionWrapper id="product">

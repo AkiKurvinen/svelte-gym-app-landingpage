@@ -1,5 +1,5 @@
-<script>
-    import CTAs from "./CTAs.svelte";
+<script>;
+    import CTAs from '../CTAs/CTAs.svelte';
     let {dark} = $props()
 </script>
 <section class="py-14 md:py-20 flex flex-col gap-8 bg-[#181b34] text-white text-center items-center justify-center">

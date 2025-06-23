@@ -1,7 +1,7 @@
 <script>
-    import SectionWrapper from "../SectionWrapper.svelte";
-    import ReviewCard from "../Molecules/ReviewCard.svelte";
-    import Stars from "../Molecules/Stars.svelte";
+    import SectionWrapper from "../SectionWrapper/SectionWrapper.svelte";
+    import ReviewCard from "../../Molecules/ReviewCard/ReviewCard.svelte";
+    import Stars from "../../Molecules/Stars/Stars.svelte";
     import { Button } from 'flowbite-svelte';
     let { children, lim, reviewsList } = $props();
 </script>
