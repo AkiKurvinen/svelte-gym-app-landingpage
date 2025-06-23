@@ -1,8 +1,8 @@
 <script>
     import { Button } from 'flowbite-svelte';
-    import { openModal } from "../store";
-    import Logo from "./Logo.svelte";
-    import CTAs from "./Molecules/CTAs.svelte";
+    import { openModal } from "../../store";
+    import Logo from "../Atoms/Logo.svelte";
+    import CTAs from "../Molecules/CTAs.svelte";
 
     const navItems = [
         { label: "Product", href: "#product" },
