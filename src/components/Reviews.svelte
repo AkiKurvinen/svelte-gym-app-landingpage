@@ -97,7 +97,7 @@
                 {/each}
             </div>
         </div>
-        <Button color="primary" on:click={() => (lim = !lim)}>
+        <Button color="primary" onclick={() => (lim = !lim)}>
             {lim ? "Show More" : "Show Less"}
         </Button>
         <div class="flex flex-col gap-10">

@@ -1,7 +1,5 @@
 <script>
     import { Button } from 'flowbite-svelte';
-
-
     import { openModal } from "../store";
     import Logo from "./Logo.svelte";
     import CTAs from "./CTAs.svelte";
