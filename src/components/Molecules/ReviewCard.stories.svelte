@@ -1,7 +1,6 @@
 <script module>
   import { defineMeta } from '@storybook/addon-svelte-csf';
   import ReviewCard from './ReviewCard.svelte';
-  import { fn } from 'storybook/test';
   let mockReviewItem = 
       {
           name: "John Doe",
@@ -17,17 +16,16 @@
     component: ReviewCard,
     tags: ['autodocs'],
     argTypes: {
-      backgroundColor: { control: 'color' },
-      size: {
-        control: { type: 'select' },
-        options: ['small', 'medium', 'large'],
-      },
+      reviewItem: { control: 'object', description: 'Review data object' },
+      left: { control: 'boolean', description: 'Align card to left' },
+      index: { control: 'number', description: 'Card index' },
+      onclick: { action: 'clicked', description: 'Click handler' },
     },
     args: {
-      onclick: fn(),
+      reviewItem: mockReviewItem,
+      left: true,
+      index:0
     }
   });
 </script>
-<Story name="ReviewCard" args={{ reviewItem:mockReviewItem , index:0 }}/>
-<Story name="ReviewCardLeft" args={{reviewItem:mockReviewItem, left:true, index:1 }}/>
-
+<Story name="ReviewCard" args={{}}/>

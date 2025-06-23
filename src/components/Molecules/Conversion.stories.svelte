@@ -8,14 +8,10 @@
     component: Conversion,
     tags: ['autodocs'],
     argTypes: {
-      backgroundColor: { control: 'color' },
-      size: {
-        control: { type: 'select' },
-        options: ['small', 'medium', 'large'],
-      },
+      backgroundColor: { control: 'color', description: 'Background color' },
     },
     args: {
-      onclick: fn(),
+      dark: true,
     }
   });
 </script>

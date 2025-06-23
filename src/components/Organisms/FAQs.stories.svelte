@@ -19,14 +19,9 @@
     component: FAQs,
     tags: ['autodocs'],
     argTypes: {
-      backgroundColor: { control: 'color' },
-      size: {
-        control: { type: 'select' },
-        options: ['small', 'medium', 'large'],
-      },
+      faqs: { control: 'object', description: 'Array of FAQ objects' },
     },
     args: {
-      onclick: fn(),
       faqs: mockFaqs
     }
   });

@@ -9,14 +9,8 @@
     component: Header,
     tags: ['autodocs'],
     argTypes: {
-      backgroundColor: { control: 'color' },
-      size: {
-        control: { type: 'select' },
-        options: ['small', 'medium', 'large'],
-      },
     },
     args: {
-      onclick: fn(),
     }
   });
 </script>

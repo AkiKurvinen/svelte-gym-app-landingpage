@@ -19,14 +19,9 @@
     component: ProductCard,
     tags: ['autodocs'],
     argTypes: {
-      backgroundColor: { control: 'color' },
-      size: {
-        control: { type: 'select' },
-        options: ['small', 'medium', 'large'],
-      },
+      productFeature: { control: 'object', description: 'Product feature data' },
     },
     args: {
-      onclick: fn(),
       productFeature: mockProductFeature,
     }
   });

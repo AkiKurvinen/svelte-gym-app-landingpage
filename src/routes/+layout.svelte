@@ -1,7 +1,7 @@
 <script>
     import "../app.css";
     let { children } = $props();
-    import Footer from "../components/Organisms/Footer.svelte";
+    import FooterController from "../components/Organisms/FooterController.svelte";
     import Header from "../components/Organisms/Header.svelte";    
     let y = $state(0);
     let outerHeight = $state(0);
@@ -13,5 +13,5 @@
 </div>
 
 {@render children()}
-<Footer />
+<FooterController />
 <svelte:window bind:scrollY={y} bind:outerHeight />

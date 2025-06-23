@@ -31,14 +31,10 @@
     component: Product,
     tags: ['autodocs'],
     argTypes: {
-      backgroundColor: { control: 'color' },
-      size: {
-        control: { type: 'select' },
-        options: ['small', 'medium', 'large'],
-      },
+      productFeatures: { control: 'object', description: 'Array of product feature objects' },
     },
     args: {
-      onclick: fn(),
+
       productFeatures: mockProductFeatures
     }
   });

@@ -12,19 +12,16 @@
     component: Nav,
     tags: ['autodocs'],
     argTypes: {
-      backgroundColor: { control: 'color' },
-      size: {
-        control: { type: 'select' },
-        options: ['small', 'medium', 'large'],
-      },
+      navItems: { control: 'object', description: 'Navigation items (array of {label, href})' },
+      openModal: { control: 'boolean', description: 'Mobile menu open state' },
     },
     args: {
-      onclick: fn(),
-      navItems: mockNavItems
+      navItems: mockNavItems,
+      openModal: false
     }
   });
 </script>
 
-<Story name="NavResponsive" args={{ navItems: mockNavItems}}/>
-<Story name="NavMobileClosed" args={{ navItems: mockNavItems, openModal:false}}/>
-<Story name="NavMobileOpen" args={{ navItems: mockNavItems, openModal:true}}/>
+<Story name="NavResponsive" args={{ navItems: mockNavItems }}/>
+<Story name="NavMobileClosed" args={{ navItems: mockNavItems, openModal:false }}/>
+<Story name="NavMobileOpen" args={{ navItems: mockNavItems, openModal:true }}/>

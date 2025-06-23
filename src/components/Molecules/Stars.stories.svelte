@@ -8,18 +8,14 @@
     component: Stars,
     tags: ['autodocs'],
     argTypes: {
-      backgroundColor: { control: 'color' },
-      size: {
-        control: { type: 'select' },
-        options: ['small', 'medium', 'large'],
-      },
+      average: { control: 'number', description: 'Average rating (0-5)' },
+      totalReviews: { control: 'number', description: 'Total number of reviews' },
     },
     args: {
-      onclick: fn(),
       average: 4.5,
       totalReviews: 500,
     }
   });
 </script>
-<Story name="Stars" args={{}}/>
+<Story name="Stars" args={{ average: 4.5, totalReviews: 500 }}/>
 

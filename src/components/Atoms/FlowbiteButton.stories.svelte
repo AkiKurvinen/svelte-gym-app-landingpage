@@ -8,17 +8,27 @@
     component: Button,
     tags: ['autodocs'],
     argTypes: {
-      backgroundColor: { control: 'color' },
+      backgroundColor: { control: 'color', description: 'Button background color' },
       size: {
         control: { type: 'select' },
-        options: ['small', 'medium', 'large'],
+        options: ['xs', 'sm', 'md', 'lg'],
+        description: 'Button size',
       },
+      primary: { control: 'boolean', description: 'Primary style' },
+      outline: { control: 'boolean', description: 'Outline style' },
+      disabled: { control: 'boolean', description: 'Disabled state' },
+      onclick: { action: 'clicked', description: 'Click handler' },
     },
     args: {
       onclick: fn(),
+      primary: true,
+      outline: false,
+      size: 'md',
+      disabled: false,
+      backgroundColor: '',
     }
   });
 </script>
 
-<Story name="Primary" args={{primary: true, label: 'Button' }}>Button</Story>
-<Story name="Outline"  args={{outline:true}}>Get Started &rarr;</Story>
+<Story name="Primary" args={{primary: true, outline: false, size: 'md', disabled: false}}>Button</Story>
+<Story name="Outline"  args={{outline:true, primary: false, size: 'md', disabled: false}}>Get Started &rarr;</Story>

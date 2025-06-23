@@ -10,5 +10,5 @@
     <ProductController/>
     <ReviewsController/>
     <FAQsConstroller/>
-    <Conversion/>
+    <Conversion dark={true}/>
 </main>

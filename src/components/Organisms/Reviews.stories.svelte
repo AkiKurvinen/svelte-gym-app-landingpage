@@ -29,14 +29,9 @@
     component: Reviews,
     tags: ['autodocs'],
     argTypes: {
-      backgroundColor: { control: 'color' },
-      size: {
-        control: { type: 'select' },
-        options: ['small', 'medium', 'large'],
-      },
+      reviewsList: { control: 'object', description: 'Array of review objects' },
     },
     args: {
-      onclick: fn(),
       reviewsList: mockReviews
     }
   });
