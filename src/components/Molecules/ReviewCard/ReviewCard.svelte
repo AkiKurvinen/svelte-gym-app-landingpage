@@ -1,8 +1,8 @@
 <script>
     import { Badge } from 'flowbite-svelte';
     let { children, reviewItem, left, index } = $props();
-</script><div
-class={"flex flex-col gap-2 w-full max-w-[500px] mx-auto relative " +
+</script>
+<div class={"flex flex-col gap-2 w-full max-w-[500px] mx-auto relative " +
     (left
         ? index % 2 === 1
             ? "hidden md:flex opacity-0 pointer-events-none max-h-[40px] overflow-hidden"

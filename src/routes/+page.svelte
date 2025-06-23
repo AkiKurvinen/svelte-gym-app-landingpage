@@ -1,15 +1,16 @@
 <script>
-    import Hero from '../components/Hero.svelte';
-    import Product from '../components/Product.svelte';
-    import Reviews from '../components/Reviews.svelte';
-    import FAQs from '../components/FAQs.svelte';
-    import Conversion from '../components/Conversion.svelte';
-    import Footer from '../components/Footer.svelte';
+    import Hero from '../components/Organisms/Hero/Hero.svelte';
+    import ProductController from '../components/Organisms/Product/ProductController.svelte';
+    import FAQsConstroller from '../components/Organisms/FAQs/FAQsController.svelte';
+    import Conversion from '../components/Molecules/Conversion/Conversion.svelte';
+    import ReviewsController from '../components/Organisms/Reviews/ReviewsController.svelte';
 </script>
+<svelte:head>
+  <title>Swoley Moley</title>
+</svelte:head>
 <main class="flex flex-col">
-
-    <Product/>
-    <Reviews/>
-    <FAQs/>
-    <Conversion/>
+    <ProductController/>
+    <ReviewsController/>
+    <FAQsConstroller/>
+    <Conversion dark={true}/>
 </main>
