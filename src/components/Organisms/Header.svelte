@@ -1,7 +1,7 @@
 <script>
-    import { openModal } from "../store";
-    import Nav from "./Nav.svelte";
-    import Logo from "./Logo.svelte";
+    import { openModal } from "../../store";
+    import Nav from "../Nav.svelte";
+    import Logo from "../Logo.svelte";
     export let fixed = false;
 </script>
 

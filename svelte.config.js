@@ -1,5 +1,4 @@
 import adapter from '@sveltejs/adapter-auto';
-import tailwindcss from '@tailwindcss/vite';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
