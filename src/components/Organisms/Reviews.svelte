@@ -1,7 +1,7 @@
 <script>
     import SectionWrapper from "../SectionWrapper.svelte";
     import ReviewCard from "../Molecules/ReviewCard.svelte";
-    import Stars from "../Stars.svelte";
+    import Stars from "../Molecules/Stars.svelte";
     import { Button } from 'flowbite-svelte';
     let { children, lim, reviewsList } = $props();
 </script>
@@ -39,7 +39,7 @@
             <p class="mx-auto text-lg sm:text-xl md:text-2xl font-semibold">
                 Trusted by 1,349 Swoldiers
             </p>
-            <Stars />
+            <Stars average = 4.5 totalReviews = 500/>
         </div>
     </div>
 </SectionWrapper>
