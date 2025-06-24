@@ -67,4 +67,4 @@
         },
     ];
 </script>
-<Reviews reviewsList={reviewsList}/>
+<Reviews reviewsList={reviewsList} lim={lim}/>
