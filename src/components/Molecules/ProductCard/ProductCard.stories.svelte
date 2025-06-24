@@ -12,7 +12,7 @@
         ],
         description:
             "Swoley moley ensures all users have the information they need to train safely and train effectively.",
-        imgUrl: 'src/components/Molecules/assets/selection.png',
+        imgUrl: 'selection.png',
     }
   const { Story } = defineMeta({
     title: 'Molecules/ProductCard',

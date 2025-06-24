@@ -10,6 +10,7 @@ const config = {
 		}),
 		paths: {
 			//base: ''
+			//base: '/swoleymoley'
 			base: '/svelte-gym-app-landingpage'
 		},
 		prerender: { entries: [] }
