@@ -2,6 +2,7 @@
 - Single landing page with anchor link navigation
 - Storybook and atomic design component structure
 - Static site generation workflow to GitHub Pages
+- Based on Learn SvelteKit – Full Course for Beginners(freeCodeCamp.org)
 
 ## Demo
 [GitHub Pages](https://akikurvinen.github.io/svelte-gym-app-landingpage/)  
