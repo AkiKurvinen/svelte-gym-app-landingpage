@@ -9,8 +9,8 @@ const config = {
 			fallback: 'index.html',
 		}),
 		paths: {
-			base: process.argv.includes('dev') ? '' : process.env.BASE_PATH,
-			//base: '/swoleymoley'
+			//base: process.argv.includes('dev') ? '' : process.env.BASE_PATH,
+			base: '/svelte-gym-app-landingpage'
 		},
 		prerender: { entries: [] }
 	}
