@@ -6,7 +6,7 @@
     const navItems = [
         { label: "Product", href: "#product" },
         { label: "Reviews", href: "#reviews" },
-        { label: "FAQs", href: "#faqs" },
+        { label: "FAQs", href: "#faqs" }
     ];
 
     let modalOpen = false;
