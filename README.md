@@ -1,33 +1,23 @@
-# sv
+# Svelte 5 demo project
+- Single landing page with anchor link navigation
+- Storybook and atomic design component structure
+- Static site generation workflow to GitHub Pages
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
-
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npx sv create
-
-# create a new project in my-app
-npx sv create my-app
-```
+## Demo
+[GitHub Pages](https://akikurvinen.github.io/svelte-gym-app-landingpage/)  
+[Storybook](https://akikurvinen.github.io/svelte-gym-app-landingpage/storybook-static/)
 
 ## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
 ```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
+npm install  
 npm run dev -- --open
 ```
 
-## Building
-
-To create a production version of your app:
+## Building (static site generation)
+Svelte adapter-static is activated.  
+Check *svelte.config.js* to *set kit: paths: base* accordingly.
+- base: '' (leave empty for developing, project will show in localhost:5174/)
+- base: '/your-repository-name' (for deploying GitHub Pages, project will work in subfolder /your-repository-name/)
 
 ```bash
 npm run build
