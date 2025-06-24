@@ -9,7 +9,7 @@ const config = {
 			fallback: 'index.html',
 		}),
 		paths: {
-			//base: process.argv.includes('dev') ? '' : process.env.BASE_PATH,
+			//base: ''
 			base: '/svelte-gym-app-landingpage'
 		},
 		prerender: { entries: [] }
@@ -17,4 +17,3 @@ const config = {
 };
 
 export default config;
-
