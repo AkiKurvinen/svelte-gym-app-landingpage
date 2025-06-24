@@ -43,7 +43,7 @@ jobs:
         run: npm run build-storybook
       - name: Copy Storybook to build directory
         run: |
-          mkdir -p build/storybook
+          mkdir -p build/storybook-static
           cp -r storybook-static/* build/storybook-static/
       - name: Setup Pages
         uses: actions/configure-pages@v5
